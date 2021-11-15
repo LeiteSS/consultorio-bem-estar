@@ -1,0 +1,30 @@
+﻿@model IEnumerable<medico.web.Models.Consulta>
+
+@{
+    ViewData["Title"] = "Consultas";
+}
+
+<h1>Consultas</h1>
+
+
+@foreach (var consulta in Model)
+{
+
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Consulta</h4>
+        </div>
+        <div class="card-body">
+            <p class="card-text">@Html.DisplayFor(modelItem => consulta.Descricao)</p>
+        </div>
+        <div class="card-footer">
+            <p class="card-text">@Html.DisplayFor(modelItem => consulta.Status)</p>
+            <p class="card-text">@Html.DisplayFor(modelItem => consulta.TransacaoId)</p>
+            <button class="btn">
+                @Html.ActionLink("Detalhar", "Detalhar", new { /*id = consulta.Id*/ }) |
+                @Html.ActionLink("Iniciar", "Iniciar", new { /*id = consulta.Id*/ }) |
+            </button>
+        </div>
+    </div>
+    <br />
+}

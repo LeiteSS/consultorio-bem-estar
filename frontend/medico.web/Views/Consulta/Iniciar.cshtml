@@ -1,0 +1,10 @@
+﻿<form asp-controller="Medicos" asp-action="Iniciar">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Iniciando a consulta...</h5>
+            <button class="btn">
+                @Html.ActionLink("Encerrar", "EfetuarFinalizacao", new { /*id = consulta.Id*/ }) |
+            </button>
+        </div>
+    </div>
+</form>

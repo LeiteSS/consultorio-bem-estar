@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bSZ2KCy2u9JO6nlUXquLrNb1Sd77vv+csEiRVNI1CK13imLmflzCGw4+a6ySKFZ3nnH26tM4d34/l7aGjWP2ig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bigch\\workspace\\Projeto-PIM\\frontend\\medico.web\\medico.web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bigch\\.nuget\\packages\\refit\\6.1.15\\refit.6.1.15.nupkg.sha512",
+    "C:\\Users\\bigch\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

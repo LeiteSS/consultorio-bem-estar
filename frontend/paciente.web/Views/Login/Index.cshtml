@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Logar";
+}
+
+<h1>Area do Paciente</h1>
+
+<h4>Logar-se</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Logar">
+            @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+            <div class="form-group">
+                <label class="control-label">CPF</label>
+                <input class="form-control" />
+                <span  class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Senha</label>
+                <input  type="password" class="form-control" />
+                <span  class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Logar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
